@@ -56,6 +56,7 @@ Below are the visual comparisons of Toto forecasts using the original data and t
 We further examined the residuals to understand model fit. Both residual series exhibit similar patterns with comparable magnitudes and occasional spikes, reinforcing that the transformation did not yield significant gains.
 
 ![Comparison of Residuals](https://raw.githubusercontent.com/hardness1020/OLS2Toto/main/figures/results/Comparison_of_Residuals.png)
+
 <br>
 
 ## 🏁 Prerequisites <a name = "prerequisites"></a>
