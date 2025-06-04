@@ -97,7 +97,7 @@ The transformed dataset is then used to train the Toto model, `forecast.ipynb`. 
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@hardness1020](https://github.com/hardness1020) - Time Series Forecasting
-- [@ripple-space](https://github.com/ripple-space) - OLS Diagnotics
+- [@ripple-space](https://github.com/ripple-space) - OLS-based feature engineering
 
 
 <br>
