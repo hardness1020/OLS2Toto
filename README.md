@@ -1,4 +1,4 @@
-<h3 align="center">OLS2Toto</h3>
+<h1 align="center">OLS2Toto</h1>
 
 <div align="center">
 
@@ -30,7 +30,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This study investigates whether applying OLS-based diagnostic checks and subsequent feature engineering can improve the performance of a state-of-the-art (SOTA) time series forecasting model, [Toto](https://arxiv.org/abs/2407.07874), in predicting hourly bike rental demand.
+This study investigates whether applying OLS-based diagnostic checks and subsequent feature engineering can improve the performance of a state-of-the-art (SOTA) time series forecasting model, [Toto](https://arxiv.org/abs/2407.07874), in predicting hourly bike rental demand. Full report can be found [here](https://www.overleaf.com/read/ftncmqsqbysm#3457b3).
 
 
 <br>
