@@ -89,11 +89,11 @@ git clone https://github.com/DataDog/toto.git
 
 ## 🎈 Usage <a name="usage"></a>
 The OLS-based feature engineering is implemented in the `diagnotics.ipynb` notebook. The notebook performs the following steps:
-1. Load the bike-sharing dataset: `hour.csv`.
-2. Export the input for Method A (original data): ` hour_base.csv`.
+1. Load the bike-sharing dataset by following steps in Dataset section.
+2. Export the input for Method A (original data): `hour_base.csv`.
 3. Perform OLS diagnostics to check for linear regression assumptions.
 4. Apply feature engineering based on the diagnostics results.
-5. Export the input for Method B (transformed data): ` hour_transformed.csv`.
+5. Export the input for Method B (transformed data): `hour_transformed.csv`.
 
 Both datasets are then used to train the Toto model, `forecast.ipynb`. The notebook also includes code to visualize the forecasts and residuals.
 
