@@ -36,12 +36,14 @@ This study investigates whether applying OLS-based diagnostic checks and subsequ
 <br>
 
 ## 📊 Results <a name = "results"></a>
-We compared the performance of the Toto forecasting model on both the original dataset and a transformed dataset where OLS-based feature engineering was applied to address linear regression assumptions (e.g., heteroscedasticity, multicollinearity).
+We compared the performance of the Toto forecasting model on both:
+* Method A (original dataset), and
+* Method B: a transformed dataset where OLS-based feature engineering was applied to address linear regression assumptions (e.g., heteroscedasticity, multicollinearity).
 
-| Dataset          | MAE  | RMSE |
-| ---------------- | ---- | ---- |
-| Original Data    | 39.8 | 63.0 |
-| Transformed Data | 40.5 | 60.9 |
+| Dataset                    | MAE  | RMSE |
+| -------------------------- | ---- | ---- |
+| Method A: Original Data    | 39.8 | 63.0 |
+| Method B: Transformed Data | 40.5 | 60.9 |
 
 The results indicate that the OLS-based feature engineering did not significantly improve the performance of the Toto model. The MAE and RMSE values for the transformed dataset were slightly higher than those for the original dataset, suggesting that the SOTA model's architecture may already be robust enough to handle the complexities of the data without additional feature engineering.
 
@@ -67,13 +69,14 @@ pip install -r requirements.txt
 ```
 
 ### Dataset
-We analyze the [bike-sharing dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) from the UCI Machine Learning Repository. Run the following command to download the dataset:
+We analyze the [bike-sharing dataset](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset) from the UCI Machine Learning Repository. Our analysis is based on `hour.csv`. Run the following command to download the dataset:
 
 ```
 wget https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip
 unzip bike+sharing+dataset.zip
 rm bike+sharing+dataset.zip
 ```
+
 
 ### Toto Time Series Forecasting Model
 The Toto model is a state-of-the-art time series forecasting model. Clone the Toto repository to access the model implementation:
@@ -86,11 +89,13 @@ git clone https://github.com/DataDog/toto.git
 
 ## 🎈 Usage <a name="usage"></a>
 The OLS-based feature engineering is implemented in the `diagnotics.ipynb` notebook. The notebook performs the following steps:
-1. Load the bike-sharing dataset.
-2. Perform OLS diagnostics to check for linear regression assumptions.
-3. Apply feature engineering based on the diagnostics results.
+1. Load the bike-sharing dataset: `hour.csv`.
+2. Export the input for Method A (original data): ` hour_base.csv`.
+3. Perform OLS diagnostics to check for linear regression assumptions.
+4. Apply feature engineering based on the diagnostics results.
+5. Export the input for Method B (transformed data): ` hour_transformed.csv`.
 
-The transformed dataset is then used to train the Toto model, `forecast.ipynb`. The notebook also includes code to visualize the forecasts and residuals.
+Both datasets are then used to train the Toto model, `forecast.ipynb`. The notebook also includes code to visualize the forecasts and residuals.
 
 
 <br>
